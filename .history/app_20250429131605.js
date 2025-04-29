@@ -1,0 +1,1 @@
+const teste = prompt("Digite um numero")

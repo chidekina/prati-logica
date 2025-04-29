@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+prati - Lista de Exercicios 1</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h2>1. Escreva um programa que recebe um número inteiro e verifica se ele é par ou ímpar utilizando uma estrutura de controle if.</h2>
+        <div>
+          <input id="task1" type="text" placeholder="Digite um numero" />
+          <input type="submit" onclick="parOuImpar()" />
+        </div>
+        <h3 id="answer1"></h3>
+      </div>
+      <div>
+        <h2>2. Crie um programa que classifica a idade de uma pessoa em categorias (criança, adolescente, adulto, idoso) com base no valor fornecido, utilizando uma estrutura de controle if-else.</h2>
+        <div>
+          <input id="task2" type="text" placeholder="Digite sua idade" />
+          <input type="submit" onclick="classificacaoEtaria()" />
+        </div>
+        <h3 id="answer2"></h3>
+      </div>
+      <div>
+        <h2>3. Implemente um programa que recebe uma nota de 0 a 10 e classifica como "Aprovado", "Recuperação", ou "Reprovado" utilizando if-else if.</h2>
+        <div>
+          <input id="task3" type="text" placeholder="Digite sua nota" />
+          <input type="submit" onclick="aprovacao()" />
+        </div>
+        <h3 id="answer3"></h3>
+      </div>
+      <div>
+        <h2>4. Crie um menu interativo no console que oferece ao usuário a escolha de três opções. Utilize switch-case para implementar a lógica de cada opção selecionada.</h2>
+        <div>
+          <ul>
+            <li>
+              <label><input class="checkbox-mood" onchange="checkboxCheck(this)" type="checkbox" id="option1" />feliz</label>
+            </li>
+            <li>
+              <label><input class="checkbox-mood" onchange="checkboxCheck(this)" type="checkbox" id="option2" />é...</label>
+            </li>
+            <li>
+              <label><input class="checkbox-mood" onchange="checkboxCheck(this)" type="checkbox" id="option3" />triste :c</label>
+            </li>
+          </ul>
+          <input type="submit" onclick="nivelHumor()" />
+        </div>
+        <h3 id="answer4"></h3>
+      </div>
+      <div>
+        <h2>5. Escreva um programa que calcula o Índice de Massa Corporal (IMC) de uma pessoa e determina a categoria de peso (baixo peso, peso normal, sobrepeso, obesidade) utilizando if-else.</h2>
+        <div>
+          <input id="task5-1" type="text" placeholder="Digite seu peso" />
+          <input id="task5-2" type="text" placeholder="Digite sua altura" />
+          <input type="submit" onclick="classificacaoIMC()" />
+        </div>
+        <h3 id="answer5"></h3>
+      </div>
+      <div>
+        <h2>6. Ler três valores para os lados de um triângulo: A, B e C. Verificar se os lados fornecidos
+            formam realmente um triângulo. Caso forme, deve ser indicado o tipo de triângulo:
+            Isósceles, escaleno ou eqüilátero.
+        <div>
+          <input id="ladoA" type="text" placeholder="Digite o primeiro lado" />
+          <input id="ladoB" type="text" placeholder="Digite o segundo lado" />
+          <input id="ladoC" type="text" placeholder="Digite o terceiro lado" />
+          <input type="submit" onclick="classificacaoTriangulo()" />
+        </div>
+        <h3 id="answer6"></h3>
+      </div>
+      <div>
+        <h2>6. Ler três valores para os lados de um triângulo: A, B e C. Verificar se os lados fornecidos
+            formam realmente um triângulo. Caso forme, deve ser indicado o tipo de triângulo:
+            Isósceles, escaleno ou eqüilátero.
+        <div>
+          <input id="ladoA" type="text" placeholder="Digite o primeiro lado" />
+          <input id="ladoB" type="text" placeholder="Digite o segundo lado" />
+          <input id="ladoC" type="text" placeholder="Digite o terceiro lado" />
+          <input type="submit" onclick="classificacaoTriangulo()" />
+        </div>
+        <h3 id="answer6"></h3>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
