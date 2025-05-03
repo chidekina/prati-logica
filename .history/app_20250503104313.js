@@ -128,143 +128,56 @@ function totalMacas() {
     answer7.innerHTML = `O preço da maçã será de R$ ${precoMacas} dando um total de R$ ${(macas * precoMacas).toFixed(2)}`;
   }
 
-  macasInput.value = '';
+  macasInput.value = "";
 }
 
 function ordemCrescente() {
-    const numero1Input = document.getElementById('task8-1');
-    const numero2Input = document.getElementById('task8-2');
-    const numero1 = numero1Input.value;
-    const numero2 = numero2Input.value;
-    const answer8 = document.getElementById('answer8');
+  const numero1Input = document.getElementById("task8-1");
+  const numero2Input = document.getElementById("task8-2");
+  const numero1 = numero1Input.value;
+  const numero2 = numero2Input.value;
+  const answer8 = document.getElementById("answer8");
 
-    if (isNaN(numero1) || isNaN(numero2)) {
-        alert("Digite um número válido.");
-    } else {
-        answer8.innerHTML = `O número ${numero1} é ${numero1 > numero2 ? 'maior' : 'menor'} que o número ${numero2}`;
-    }
+  if (isNaN(numero1) || isNaN(numero2)) {
+    alert("Digite um número válido.");
+  } else {
+    answer8.innerHTML = `O número ${numero1} é ${numero1 > numero2 ? "maior" : "menor"} que o número ${numero2}`;
+  }
 
-    numero1Input.value = '';
-    numero2Input.value = '';
+  numero1Input.value = "";
+  numero2Input.value = "";
 }
 
 function ordemDecrescente() {
-    const answer9 = document.getElementById('answer9');
+  const answer9 = document.getElementById("answer9");
 
-    for (let i = 10; i >= 1; i--) { 
-        answer9.innerHTML += `${i} `
-    }
+  for (let i = 10; i >= 1; i--) {
+    answer9.innerHTML += `${i} `;
+  }
 }
 
 function repetirNumero() {
-  const numeroInput = document.getElementById('task10');
+  const numeroInput = document.getElementById("task10");
   const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer10');
-
-  let listaNumero = [];
+  const answer10 = document.getElementById("answer10");
 
   if (Number.isInteger(numero) === true && isNaN(numero) === false) {
-    answer10.innerHTML = '';
-    for(let i = 1; i <= 10; i++) {
-     listaNumero.push(numero);
+    answer10.innerHTML = "";
+    for (let i = 1; i <= 10; i++) {
+      answer10.innerHTML += `${numero} `;
     }
   } else {
     alert("Digite um número inteiro.");
   }
 
-  answer.innerHTML = listaNumero.join(', ')
-  numeroInput.value = '';
+  numeroInput.value = "";
 }
 
 function somarNumeros() {
-  const numeros = [
-  document.getElementById('task10-1'),
-  document.getElementById('task10-2'),
-  document.getElementById('task10-3'),
-  document.getElementById('task10-4'),
-  document.getElementById('task10-5'),
-  ];
+  const numeros = [Number(document.getElementById("task10-1").value), Number(document.getElementById("task10-2").value), Number(document.getElementById("task10-3").value), Number(document.getElementById("task10-4").value), Number(document.getElementById("task10-5").value)];
+  let somaTotal;
 
-  const answer =document.getElementById('answer11');
-  let somaTotal = 0;
-
-  for (let i = 0; i < numeros.length; i++) {
-    const valor = Number(numeros[i].value);
-
-    somaTotal += valor;
+  for (let i = 1; i <= 5; i++) {
+    somaTotal += numeros[i];
   }
-
-  answer.innerHTML = `A soma total é: ${somaTotal}`;
-
-  numeros.forEach((numero) => (numero.value = ''));
-}
-
-function tabuada() {
-  const numeroInput = document.getElementById('task12');
-  const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer12');
-
-  let tabuada = [];
-
-  for (let i = 1; i <= 10; i++) {
-    tabuada += `${numero} * ${i} = ${numero * i}<br>`;
-  }
-
-  numeroInput.value = '';
-  answer.innerHTML = `A tabuada de ${numero} é:<br> ${tabuada}`
-}
-
-let numerosTotal = [];
-
-function mediaAritmetica() {
-  const numeroInput = document.getElementById('task13');
-  const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer13');
-
-  let mediaTotal = 0;
-
-  if (numero !== 0) {
-    numerosTotal.push(numero);
-    numeroInput.value = '';
-  } else {
-    if (numerosTotal.length === 0) { 
-      alert("Nenhum número foi inserido.");
-      return;
-    }
-
-    for(let i = 0; i < numerosTotal.length; i++) {
-      mediaTotal += numerosTotal[i];
-    }
-    
-    mediaTotal = (mediaTotal/numerosTotal.length).toFixed(2)
-    
-    answer.innerHTML = `A média total dos números: ${numerosTotal.join(', ')} é de ${mediaTotal}`;
-  }
-}
-
-function fatorial() {
-  const numeroInput = document.getElementById('task14');
-  const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer14');
-
-  let fatorial = 1;
-
-  for(let i = numero; i >= 2; i--) {
-    fatorial *= i;
-  }
-
-  answer.innerHTML = `O fatorial de ${numero}! = ${fatorial}`;
-  numeroInput.value = '';
-}
-
-function sequenciaFibronacci() {
-  const answer = document.getElementById('answer15');
-
-  let fibronacci = [0, 1, 1];
-
-  for (let i = 3; i < 10; i++) { 
-    fibronacci.push(fibronacci[i - 2] + fibronacci[i - 1]);
-  }
-
-  answer.innerHTML = fibronacci.join(', ')
 }

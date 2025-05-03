@@ -266,5 +266,5 @@ function sequenciaFibronacci() {
     fibronacci.push(fibronacci[i - 2] + fibronacci[i - 1]);
   }
 
-  answer.innerHTML = fibronacci.join(', ')
+  answer.innerHTML = fibronacci.join()
 }

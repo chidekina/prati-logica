@@ -241,30 +241,3 @@ function mediaAritmetica() {
     answer.innerHTML = `A média total dos números: ${numerosTotal.join(', ')} é de ${mediaTotal}`;
   }
 }
-
-function fatorial() {
-  const numeroInput = document.getElementById('task14');
-  const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer14');
-
-  let fatorial = 1;
-
-  for(let i = numero; i >= 2; i--) {
-    fatorial *= i;
-  }
-
-  answer.innerHTML = `O fatorial de ${numero}! = ${fatorial}`;
-  numeroInput.value = '';
-}
-
-function sequenciaFibronacci() {
-  const answer = document.getElementById('answer15');
-
-  let fibronacci = [0, 1, 1];
-
-  for (let i = 3; i < 10; i++) { 
-    fibronacci.push(fibronacci[i - 2] + fibronacci[i - 1]);
-  }
-
-  answer.innerHTML = fibronacci.join(', ')
-}

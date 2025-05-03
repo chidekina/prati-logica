@@ -249,22 +249,11 @@ function fatorial() {
 
   let fatorial = 1;
 
-  for(let i = numero; i >= 2; i--) {
+  for(let i = numero; i >= 1; i--) {
     fatorial *= i;
   }
 
   answer.innerHTML = `O fatorial de ${numero}! = ${fatorial}`;
   numeroInput.value = '';
-}
 
-function sequenciaFibronacci() {
-  const answer = document.getElementById('answer15');
-
-  let fibronacci = [0, 1, 1];
-
-  for (let i = 3; i < 10; i++) { 
-    fibronacci.push(fibronacci[i - 2] + fibronacci[i - 1]);
-  }
-
-  answer.innerHTML = fibronacci.join(', ')
 }

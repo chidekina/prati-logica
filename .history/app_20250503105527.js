@@ -159,20 +159,17 @@ function ordemDecrescente() {
 function repetirNumero() {
   const numeroInput = document.getElementById('task10');
   const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer10');
-
-  let listaNumero = [];
+  const answer10 = document.getElementById('answer10');
 
   if (Number.isInteger(numero) === true && isNaN(numero) === false) {
     answer10.innerHTML = '';
     for(let i = 1; i <= 10; i++) {
-     listaNumero.push(numero);
+      answer10.innerHTML += `${numero} `;
     }
   } else {
     alert("Digite um número inteiro.");
   }
 
-  answer.innerHTML = listaNumero.join(', ')
   numeroInput.value = '';
 }
 
@@ -200,8 +197,7 @@ function somarNumeros() {
 }
 
 function tabuada() {
-  const numeroInput = document.getElementById('task12');
-  const numero = Number(numeroInput.value);
+  const numero = Number(document.getElementById('task12').value);
   const answer = document.getElementById('answer12');
 
   let tabuada = [];
@@ -210,61 +206,7 @@ function tabuada() {
     tabuada += `${numero} * ${i} = ${numero * i}<br>`;
   }
 
-  numeroInput.value = '';
-  answer.innerHTML = `A tabuada de ${numero} é:<br> ${tabuada}`
-}
+  answer.innerHTML
 
-let numerosTotal = [];
 
-function mediaAritmetica() {
-  const numeroInput = document.getElementById('task13');
-  const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer13');
-
-  let mediaTotal = 0;
-
-  if (numero !== 0) {
-    numerosTotal.push(numero);
-    numeroInput.value = '';
-  } else {
-    if (numerosTotal.length === 0) { 
-      alert("Nenhum número foi inserido.");
-      return;
-    }
-
-    for(let i = 0; i < numerosTotal.length; i++) {
-      mediaTotal += numerosTotal[i];
-    }
-    
-    mediaTotal = (mediaTotal/numerosTotal.length).toFixed(2)
-    
-    answer.innerHTML = `A média total dos números: ${numerosTotal.join(', ')} é de ${mediaTotal}`;
-  }
-}
-
-function fatorial() {
-  const numeroInput = document.getElementById('task14');
-  const numero = Number(numeroInput.value);
-  const answer = document.getElementById('answer14');
-
-  let fatorial = 1;
-
-  for(let i = numero; i >= 2; i--) {
-    fatorial *= i;
-  }
-
-  answer.innerHTML = `O fatorial de ${numero}! = ${fatorial}`;
-  numeroInput.value = '';
-}
-
-function sequenciaFibronacci() {
-  const answer = document.getElementById('answer15');
-
-  let fibronacci = [0, 1, 1];
-
-  for (let i = 3; i < 10; i++) { 
-    fibronacci.push(fibronacci[i - 2] + fibronacci[i - 1]);
-  }
-
-  answer.innerHTML = fibronacci.join(', ')
 }

@@ -10,7 +10,7 @@
       <div>
         <h2>1. Escreva um programa que recebe um número inteiro e verifica se ele é par ou ímpar utilizando uma estrutura de controle if.</h2>
         <div>
-          <input id="task1" type="number" placeholder="Digite um numero" />
+          <input id="task1" type="text" placeholder="Digite um numero" />
           <input type="submit" onclick="parOuImpar()" />
         </div>
         <h3 id="answer1"></h3>
@@ -18,7 +18,7 @@
       <div>
         <h2>2. Crie um programa que classifica a idade de uma pessoa em categorias (criança, adolescente, adulto, idoso) com base no valor fornecido, utilizando uma estrutura de controle if-else.</h2>
         <div>
-          <input id="task2" type="number" placeholder="Digite sua idade" />
+          <input id="task2" type="text" placeholder="Digite sua idade" />
           <input type="submit" onclick="classificacaoEtaria()" />
         </div>
         <h3 id="answer2"></h3>
@@ -26,7 +26,7 @@
       <div>
         <h2>3. Implemente um programa que recebe uma nota de 0 a 10 e classifica como "Aprovado", "Recuperação", ou "Reprovado" utilizando if-else if.</h2>
         <div>
-          <input id="task3" type="number" placeholder="Digite sua nota" />
+          <input id="task3" type="text" placeholder="Digite sua nota" />
           <input type="submit" onclick="aprovacao()" />
         </div>
         <h3 id="answer3"></h3>
@@ -52,8 +52,8 @@
       <div>
         <h2>5. Escreva um programa que calcula o Índice de Massa Corporal (IMC) de uma pessoa e determina a categoria de peso (baixo peso, peso normal, sobrepeso, obesidade) utilizando if-else.</h2>
         <div>
-          <input id="task5-1" type="number" placeholder="Digite seu peso" />
-          <input id="task5-2" type="number" placeholder="Digite sua altura" />
+          <input id="task5-1" type="text" placeholder="Digite seu peso" />
+          <input id="task5-2" type="text" placeholder="Digite sua altura" />
           <input type="submit" onclick="classificacaoIMC()" />
         </div>
         <h3 id="answer5"></h3>
@@ -61,9 +61,9 @@
       <div>
         <h2>6. Ler três valores para os lados de um triângulo: A, B e C. Verificar se os lados fornecidos formam realmente um triângulo. Caso forme, deve ser indicado o tipo de triângulo: Isósceles, escaleno ou eqüilátero.</h2>
         <div>
-          <input id="ladoA" type="number" placeholder="Digite o primeiro lado" />
-          <input id="ladoB" type="number" placeholder="Digite o segundo lado" />
-          <input id="ladoC" type="number" placeholder="Digite o terceiro lado" />
+          <input id="ladoA" type="text" placeholder="Digite o primeiro lado" />
+          <input id="ladoB" type="text" placeholder="Digite o segundo lado" />
+          <input id="ladoC" type="text" placeholder="Digite o terceiro lado" />
           <input type="submit" onclick="classificacaoTriangulo()" />
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div>
         <h2>7. As maçãs custam R$ 0,30 se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um algoritmo que leia o número de maçãs compradas, calcule e escreva o valor total da compra.</h2>
         <div>
-          <input id="task7" type="number" placeholder="Digite quantas maçãs você quer comprar." />
+          <input id="task7" type="text" placeholder="Digite quantas maçãs você quer comprar." />
           <input type="submit" onclick="totalMacas()" />
         </div>
         <h3 id="answer7"></h3>
@@ -79,8 +79,8 @@
       <div>
         <h2>8. Escreva um algoritmo para ler 2 valores (considere que não serão lidos valores iguais) e escreve-los em ordem crescente.</h2>
         <div>
-          <input id="task8-1" type="number" placeholder="Digite um numero" />
-          <input id="task8-2" type="number" placeholder="Digite outro numero" />
+          <input id="task8-1" type="text" placeholder="Digite um numero" />
+          <input id="task8-2" type="text" placeholder="Digite outro numero" />
           <input type="submit" onclick="ordemCrescente()" />
         </div>
         <h3 id="answer8"></h3>
@@ -92,39 +92,20 @@
       </div>
       <div>
         <h2>10. Escreva um algoritmo para ler um número inteiro e escrevê-lo na tela 10 vezes.</h2>
-        <input id="task10" type="number" placeholder="Digite um numero" />
+        <input id="task10" type="text" placeholder="Digite um numero" />
         <input type="submit" onclick="repetirNumero()" />
         <h3 id="answer10"></h3>
       </div>
       <div>
         <h2>11. Escreva um programa que solicita ao usuário 5 números e calcula a soma total
           utilizando um loop for.</h2>
-          <input id="task10-1" type="number" placeholder="Digite um numero" />
-          <input id="task10-2" type="number" placeholder="Digite o segundo numero" />
-          <input id="task10-3" type="number" placeholder="Digite o terceiro numero" />
-          <input id="task10-4" type="number" placeholder="Digite o quarto numero" />
-          <input id="task10-5" type="number" placeholder="Digite o quinto numero" />
-        <input type="submit" onclick="somarNumeros()" />
-        <h3 id="answer11"></h3>
-        <h2>12. Crie um programa que exibe a tabuada de um número fornecidopelousuário (de 1 a
-          10) utilizando um loop for</h2>
-        <input id="task12" type="number" placeholder="Digite um numero" />
-        <input type="submit" onclick="tabuada()" />
-        <h3 id="answer12"></h3>
-        <h2>13. Fazer um algoritmo para receber números decimais até que o usuário digite 0 e fazer
-          amédiaaritmética desses números</h2>
-        <input id="task13" type="number" placeholder="Digite um numero (0 para parar)" />
-        <input type="submit" onclick="mediaAritmetica()" />
-        <h3 id="answer13"></h3>
-        <h2> 14. Crie um programa que calcula o fatorial de um número fornecido pelo usuário
-          utilizando um loop for ou while.</h2>
-        <input id="task14" type="number" placeholder="Digite um numero" />
-        <input type="submit" onclick="fatorial()" />
-        <h3 id="answer14"></h3>
-        <h2>  15. Escreva um programa que gera e imprime os primeiros 10 números da sequência de
-          Fibonacci utilizando um loop for.</h2>
-        <input type="submit" onclick="sequenciaFibronacci()" />
-        <h3 id="answer15"></h3>
+          <input id="task10-1" type="text" placeholder="Digite um numero" />
+          <input id="task10-2" type="text" placeholder="Digite o segundo numero" />
+          <input id="task10-2" type="text" placeholder="Digite o terceiro numero" />
+          <input id="task10-2" type="text" placeholder="Digite o quarto numero" />
+          <input id="task10-2" type="text" placeholder="Digite outro numero" />
+        <input type="submit" onclick="repetirNumero()" />
+        <h3 id="answer10"></h3>
       </div>
     </main>
     <script src="app.js"></script>

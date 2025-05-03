@@ -265,6 +265,4 @@ function sequenciaFibronacci() {
   for (let i = 3; i < 10; i++) { 
     fibronacci.push(fibronacci[i - 2] + fibronacci[i - 1]);
   }
-
-  answer.innerHTML = fibronacci.join(', ')
 }
